@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Christian-Ray's Project 1</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dropMenu">
+      <h1>Menu</h1>
+      <div class="dropdown">
+        <span class="menu-item">File</span>
+        <div class="dropdown-content">
+          <li><a href="#" id="loadCSV">Load CSV file</a></li>
+          <li><a href="#" id="login">Login to DB</a></li>
+          <li><a href="#" id="logout">Logout DB</a></li>
+          <li><a href="#" id="closeTab">Exit</a></li>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="menu-item">View</span>
+        <div class="dropdown-content">
+          <li><a href="#" id="Line">Line</a></li>
+          <li><a href="#" id="Bar">Bar</a></li>
+          <li><a href="#" id="Scatter">Scatter</a></li>
+          <li><a href="#" id="Pie">Pie</a></li>
+          <li><a href="#" id="GeoChart">GeoChart</a></li>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="menu-item">Setting</span>
+        <div class="dropdown-content">
+          <li><a href="#" id="userInfo">User Info</a></li>
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="menu-item">Help</span>
+        <div class="dropdown-content">
+          <li><a href="javascript:void(0);" id="showInfo">Info</a></li>
+          <li>
+            <a href="javascript:void(0);" id="clientInfo">Client</a>
+          </li>
+        </div>
+      </div>
+    </div>
+    <div id="login-form" class="login-form">
+      <h1>Login to DB</h1>
+      <input type="text" id="login-input" placeholder="Login" /><br />
+      <input type="password" id="password-input" placeholder="Password" /><br />
+      <button id="loginBtn">Login</button>
+      <button onclick="hideLoginSection()">Close</button>
+    </div>
+    <div class="graph-display">
+      <h1>Graph Area</h1>
+      <div id="graph" style="width: 100%; height: 300px"></div>
+    </div>
+    <div class="data-selection">
+      <h1>Data Select</h1>
+      <p>
+        Please select one of the following choices, and then run one of the
+        graphs in the View menu. Note: The empty, NULL, or NaN values will be
+        excluded.
+      </p>
+      <form id="data-selection-form">
+        <input type="radio" name="data-selection" value="Death" /> Death (Bar,
+        Line, Scatter)<br />
+        <input type="radio" name="data-selection" value="Hospitalizations" />
+        Hospitalizations (Bar, Line)<br />
+        <input type="radio" name="data-selection" value="Negative" /> Negative
+        (GeoChart, Pie)<br />
+      </form>
+    </div>
+    <div class="google-table">
+      <h1>Table</h1>
+      <div class="table-container" id="table-container">
+        <div id="table"></div>
+      </div>
+    </div>
+    <div class="message-area">
+      <h1>Messages</h1>
+      <p id="message"></p>
+    </div>
+  </body>
+</html>
