@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line Chart</title>
+    <!-- jQuery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap from MaxCDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Chart.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Line Chart</h1>
+      <button id="loadDataBtn" class="btn btn-primary">Load Data</button>
+      <div class="card">
+        <div class="card-body">
+          <canvas id="lineChart" width="400" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
