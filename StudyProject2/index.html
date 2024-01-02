@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Household Income Density Chart</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="stateSelect">Select State:</label>
+      <select id="stateSelect" onchange="loadChart()">
+        <!-- Options will be populated dynamically using JavaScript -->
+      </select>
+      <div id="chartContainer">
+        <!-- Chart will be displayed here -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
